@@ -1,0 +1,79 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+h2 { 
+    font-size: 30px;
+    text-decoration: underline; 
+    color : #ff6600 ;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+   
+  .container {
+   
+    padding:45px 0 20px;
+    font-size:15px;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+     min-width: 100% ;
+     min-height: 100% ;
+     width: 40%;
+  
+  
+  }
+  h5 {
+  font-size: 25px;
+  text-align: justify;
+  
+  color : #ff6600 ;
+  }
+  p {
+    font-size: 19px;
+    line-height: 35px;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #000;
+    }
+    .col-md-6  {
+    text-align: center;
+    
+    } 
+  .col-md-6  {
+  text-align: center;
+  
+  } 
+  .card-body img{
+     border-radius: 25px;
+  }
+  .card-body img {
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.card-body:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+  @media (max-width: 880px) {
+  
+      .container .metiers,
+    .container .card,
+    .container .card-body{
+          display: block;
+          width: 100%;
+          margin-bottom: 40px;
+          text-align: center;
+      }
+  
+      .footer-distributed .footer-center i{
+          margin-left: 0;
+      }
+  
+  }

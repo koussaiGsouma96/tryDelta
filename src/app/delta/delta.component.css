@@ -1,0 +1,125 @@
+
+h2 { text-align: center ;
+    font-size: 25px;
+     border-bottom: 5px solid #ff6600 ; 
+     width: 17%; 
+     height: 17%;
+      text-transform: uppercase;
+      margin-left: 40%;
+      color: #000;
+      line-height: 50px;
+      
+}
+h3 {
+   font-size: 25px;
+   text-align: justify;
+   margin-left: 10px;
+   margin-right: 10px;
+   color: #ff6600;
+   line-height: 35px;
+   font-weight: bold;
+   
+ }
+ 
+    
+.container {
+   
+background: #f2f2f2;
+
+font-size:15px;
+height: auto;
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+min-width: 100% ;
+min-height: 100% ;
+width: 40%;
+
+
+}
+
+h5 {
+
+ text-align: justify;
+ color: black;
+ font-size: 30px;
+ margin-left: 10px;
+ margin-right: 10px;
+
+
+}
+.style{
+   margin-top: 30px;
+}
+p {
+   font-size: 19px;
+  
+   
+   text-align: justify;
+   margin-left: 10px;
+   margin-right: 10px;
+   color: #000;
+   line-height: 35px;
+   }
+   .col-md-6  {
+   text-align: center;
+   
+   } 
+a {
+font-size: 20px;
+text-align: justify;
+
+}
+.btn {
+   background-color: #ff6600;
+   border-radius:28px;
+   border:1px solid #ff6600 ;
+   display:inline-block;
+   cursor:pointer;
+   color:#ffffff;
+   font-family:Arial;
+   font-size:17px;	
+   text-decoration:none;
+   text-shadow:0px 1px 0px #ff6600;
+}
+.btn:hover {
+   background-color:#ff6600;
+}
+btn:active {
+   position:relative;
+   top:1px;
+}
+.col-md-6  {
+ text-align: center;
+ 
+}
+.card-body{
+   overflow: hidden;
+   width: 100%;
+   height: 100% ;
+   border-radius: 25px;
+ }
+ .card-body img{
+  
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+ }
+ .card-body:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+ }
+
+ @media (max-width: 880px) {
+    
+   h2 { text-align: center ;
+     font-size: 16px;
+      border-bottom: 5px solid #ff6600 ; 
+      width: 40%; 
+      height: 10%;
+       text-transform: uppercase;
+       margin-left: 30%;
+       color: #000;
+   }
+}   

@@ -1,0 +1,298 @@
+*{
+	padding:0;
+	margin:0;
+}
+h2 { text-align: center ;
+  font-size: 25px;
+  padding-bottom: 12px;
+  margin-bottom: 40px;
+
+}
+
+.footerImg img{
+	margin-top : -100px ;	
+}
+
+.footer {
+  background : white ;
+  overflow: hidden;
+}
+
+
+footer{
+	position: fixed;
+	bottom: 0;
+}
+.photo {
+	margin-left: 7px;
+	position: relative;
+		z-index: 2;
+}
+
+
+.photo img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	
+}
+.photo:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+
+
+.footer-distributed{
+	background-image: 
+  url('/assets/img/contact.jpg');
+	
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+font: bold 16px sans-serif;
+padding: 50px 50px 60px 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+   min-width: 100% ;
+   min-height: 100% ;
+   position: relative !important;;
+  
+   
+}
+.footer-distributed::after{
+	background-color: black !important;;
+	opacity:  0.5  !important;;
+	content: "";
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+  font-size: 25px;
+  position: relative;
+	z-index: 2;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+  color: white ;
+  text-decoration: none;
+  
+  
+}
+ul{
+  list-style-type: none;
+  line-height: 2em;
+  
+}
+ ul li a:hover{
+	 font-weight: bold !important;;
+	color: #ff6600 !important;;
+  }
+
+
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+.footerImg{
+	text-align: center;
+	position: relative;
+		z-index: 2;
+}
+img1:hover{
+	background-image: 
+	url('/assets/img/fac1.jpg');
+
+}
+
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+.text{
+	font-size: 1.0625rem;
+	font-weight: 500;
+	padding-left: 10px;
+	color: white ;
+	position: relative;
+	z-index: 2;
+  }
+  .content {
+	position: relative;
+	z-index: 2;
+  }
+
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+	
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+	.footer-distributed{
+		background-image: 
+	  url('/assets/img/contact.jpg');
+	    
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: 100% 100%;
+	   min-width: 100% ;
+	   min-height: 100% ;
+	   position: relative !important;;
+	  
+	   
+	}
+	.content {
+		position: relative;
+		z-index: 2;
+	  }
+	
+	.footer-distributed::after{
+		background-color: black !important;;
+		opacity: 0.5  !important;;
+		content: "";
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.text{
+		font-size: 1.0625rem;
+		font-weight: 500;
+		padding-left: 10px;
+		color: white ;
+		position: relative;
+		z-index: 2;
+	  }
+	  .footerImg{
+		position: relative;
+		z-index: 2;
+	  }
+	  .photo {
+		margin-left: 7px;
+		position: relative;
+			z-index: 2;
+	}
+	
+	
+	.photo img {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+		-webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+		
+	}
+	.photo:hover img {
+		-webkit-filter: grayscale(0);
+		filter: grayscale(0);
+	}
+
+}

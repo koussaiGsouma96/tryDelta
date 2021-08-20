@@ -1,0 +1,52 @@
+<section id="acc">
+    <div class="body-text">
+      <nav  [class.nav_change]="nav_variable">
+  
+        <div class="wrapper">
+          
+            <a class="log" routerLink="/acc">
+              <img  src="/assets/img/deltalogo.png"   margin = "initial" padding = "initial"
+           width="200" height="200">
+            </a>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a routerLink="/acc">Accueil</a></li>
+            <li><a routerLink="/deltafacades" >Delta Façades</a></li>
+            <li>
+              
+              <a class="desktop-item" >Nos métiers<i class="fas icon_metier fa-chevron-down"></i></a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Nos métiers <i class="fas icon_metier fa-chevron-down"></i></label>
+              <ul class="drop-menu">
+                <li><a routerLink="/m1">Rénovation</a></li>
+                <li><a routerLink="/m2">Construction</a></li>
+                <li><a routerLink="/m3">Peinture</a></li>
+                <li><a routerLink="/m4">Carrelage</a></li>
+                <li><a routerLink="/m5">Paquet</a></li>
+                <li><a routerLink="/m6">Plomberie</a></li>
+                <li><a routerLink="/m7">Electricité</a></li>
+                <li><a routerLink="/m8">Maçonnerie</a></li>
+                <li><a routerLink="/m9">Etanchéité</a></li>
+    
+              </ul>
+            </li>
+            <li><a routerLink="/realiser">Nos réalisations</a></li>
+            <li><a routerLink="/formcontact">Contact</a></li>
+           
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+    </nav>
+    </div>
+ 
+    <div class="footer">
+        <a  routerLink="/formcontact" class="button"><br><br><span>Demander un devis gratuit   </span><img class="icon" src="/assets/img/acc.png" width="40" height="40" ></a>
+</div>
+   
+  </section>
+
+
+  
+  

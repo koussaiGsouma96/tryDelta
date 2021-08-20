@@ -1,0 +1,57 @@
+<section>
+  <br>
+  <br>
+  <br>
+ <h1> Vous avez des questions, demander un devis ?</h1>
+
+ <p>Veuillez indiquer vos cordonnées et votre demande</p>
+ <p> Delta FAÇADES répondra dans le plus bref délais. </p>
+
+
+ <div class="container">
+  
+  <div class="card-body">
+      <form [formGroup]="contactForm" id="my-form"  action="https://formspree.io/f/mpzkylea"
+ method="POST" (ngSubmit)="onSubmit()">
+         
+          
+              <div class="form-group">
+                  <label for="nom" ></label>
+                  <input type="text" formControlName="nom" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.nom.errors }" placeholder="NOM*" />
+                  <div *ngIf="submitted && f.nom.errors" class="invalid-feedback">
+                      <div *ngIf="f.nom.errors.required">Champ obligatoire</div>
+                  </div>
+              </div>
+          <div class="form-group">
+              <label for="email"></label>
+              <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" placeholder="EMAIL*"/>
+              <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                  <div *ngIf="f.email.errors.required">Champ obligatoire</div>
+                  <div *ngIf="f.email.errors.email">Vous devez créer une adresse e-mail valide</div>
+              </div>
+          </div>
+          <div class="form-group">
+            <label for="sujet" ></label>
+              <input type="text" formControlName="sujet" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.sujet.errors }" placeholder="SUJET*" />
+              <div *ngIf="submitted && f.sujet.errors" class="invalid-feedback">
+                  <div *ngIf="f.sujet.errors.required">Champ obligatoire</div>
+              </div>
+          </div>
+          <div class="form-group">
+            <label for="MESSAGE*" ></label>
+              <textarea type="text" formControlName="message" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.message.errors }" cols="20" rows="5"  placeholder="MESSAGE*" ></textarea>
+              <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+                  <div *ngIf="f.message.errors.required">Champ obligatoire</div>
+              </div>
+          </div>
+         <br>
+          <div class="text-center">
+              
+              <button type="submit" value = "Send">ENVOYER*</button>
+              
+          </div>
+      </form>
+  </div>
+ </div>
+ 
+</section>
